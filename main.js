@@ -20,10 +20,20 @@ ADVANCED TRACK: 14-20
 
 
 // 1. Create an object called "me" that describes you with your name, city, and job title.
-//    Display the content of the object in the HTML page. 
+//    Display the content of the object in the HTML page.
+var me = {
+  name: "Carlos",
+  city: "Denver",
+  job_title: "Professional Waffler"
+}
 
+me["job title"] = "Swimming Couch"
+console.log(me["job title"])
 
+document.getElementById('q1').innerHTML = "<h2>" + me.name + "</h2>"
+  + "<p>I live in " + me.city + " and I am a " + me.job_title + "</p>"
 
+document.getElementById('q1a').innerHTML = me
 
 
 // 2. To your "me" object, add a key of "family" with the value being an array of three of your family members and display in the HTML page.
@@ -150,10 +160,3 @@ var invitees = { adults: [{
 // F. Remove the second book from the books object.
 
 // G. Explain, in your own words, the difference between Literal Notation and Constructor Notation.
-
-
-
-
-
-
-
