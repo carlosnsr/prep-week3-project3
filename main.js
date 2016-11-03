@@ -92,7 +92,10 @@ var invitees = { adults: [{
                       };
 
 
-// 4. Access Penny's dinner choice (this will be the second item in his dinnerChoice array)
+// 4. Access Penny's dinner choice (this will be the second item in her dinnerChoice array)
+
+document.getElementById('q4').innerHTML = invitees.adults[0].dinnerChoice[1]
+document.getElementById('q4a').innerHTML = invitees['adults'][0]['dinnerChoice'][1]
 
 // 5. Access Pablo's table number.
 
