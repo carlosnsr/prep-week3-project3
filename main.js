@@ -130,10 +130,23 @@ document.getElementById('q4a').innerHTML = invitees['adults'][0]['dinnerChoice']
 // ADVANCED TRACK
 // A. Create an empty object called "books".
 
+var books = {}
+
 // B. Create three book objects that contain book titles, their author, and number of pages.
 //     The name of each object should be some kind of made up ISBN number.
 //     (Feel free to make up the titles. And the authors. Have fun. No pressure.)
 //     Insert the three objects into the "books" object.
+
+function Book(title, author, pages) {
+  return {
+    title: title,
+    author: author,
+    pages: pages
+  }
+}
+
+books.ISBN22222 = new Book("You Had Me at Woof", "Julie Klum", 207)
+books.ISBN44444 = new Book("Eat, Code, Love", "Carlos Rodrigues", 15)
 
 // Final desired result:
     // var books = {ISBN22222:  {
